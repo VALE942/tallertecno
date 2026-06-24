@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productos tecnologicos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon"
+        href="/imagenes/Gris_Moderno_Tecnología_y_Videojuegos_Logo_para_Videojuegos-removebg-preview.png">
+</head>
+
+<body>
+    <header class="bg green">
+        <img src="/imagenes/Gris_Moderno_Tecnología_y_Videojuegos_Logo_para_Videojuegos-removebg-preview.png"
+            alt="computador1" width="150" height="150" class="icon head">
+        <!-- Botón hamburguesa para móvil -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">&#9776;</button>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+                <li><a href="productos.html">productos</a></li>
+            </ul>
+        </nav>
+    </header>   
+
+<section id="sobre_nosotros">
+        <div id="titulonosotros">
+            <h1>MISION</h1>
+            <p>Para nosotros es demasiado importante el progreso y la actualizacion de la tecnologia pero no mas que
+                niestros clientes, por eso nuestra mision es llegar a la mayor cantidad de clientes posibles y llegar a
+                ser populares entre la industria de las tiendas de dispositivos</p>
+        </div>
+        <div id="servicio">
+            <h3>NUESTROS SERVICIOS</h3>
+            <ul>
+                <li>Arreglo de celulares</li>
+                <li>Venta de dispositivos</li>
+                <li>Asesorias</li>
+                <li>Mantenimiento</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <h1>REDES SOCIALES</h1>
+            <ul>
+                <li><a href="https://wa.me/3126748395">Whatsapp</a></li>
+                <li><a href="https://www.instagram.com/valquicenovargas/">Instagram</a></li>
+                <li><a href="https://www.facebook.com/share/18rFM651MH/">Facebook</a></li>
+                <li><a href="https://www.tiktok.com/@vale7_75">Tiktok</a></li>
+            </ul>
+        </nav>
+        <div id="derechos">
+            &copy; 2026 tecno valeria, todos los derechos reservados
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>

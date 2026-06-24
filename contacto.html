@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productos tecnologicos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon"
+        href="/imagenes/Gris_Moderno_Tecnología_y_Videojuegos_Logo_para_Videojuegos-removebg-preview.png">
+</head>
+
+<body>
+    <header class="bg green">
+        <img src="/imagenes/Gris_Moderno_Tecnología_y_Videojuegos_Logo_para_Videojuegos-removebg-preview.png"
+            alt="computador1" width="150" height="150" class="icon head">
+        <!-- Botón hamburguesa para móvil -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">&#9776;</button>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+                <li><a href="productos.html">productos</a></li>
+            </ul>
+        </nav>
+    </header>
+      <section id="formulario">
+        <form class="contac_from">
+            <h2>Contactanos</h2>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="Correo">Correo</label>
+            <input type="text" id="correo" name="email" required>
+
+            <label for="message">Mensaje</label>
+            <textarea name="menssage" id="menssage" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="mapa">
+        <h1>Ubicanos</h1>
+        <h4>Nos puedes encontrar a través de este mapa</h4>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.937546057392!2d-75.55074172524907!3d6.271943393716783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442954aaef449b%3A0x8f13baa6f0a115d6!2sTostones%20Broms!5e0!3m2!1ses-419!2sco!4v1780409752268!5m2!1ses-419!2sco"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer>
+        <nav>
+            <h1>REDES SOCIALES</h1>
+            <ul>
+                <li><a href="https://wa.me/3126748395">Whatsapp</a></li>
+                <li><a href="https://www.instagram.com/valquicenovargas/">Instagram</a></li>
+                <li><a href="https://www.facebook.com/share/18rFM651MH/">Facebook</a></li>
+                <li><a href="https://www.tiktok.com/@vale7_75">Tiktok</a></li>
+            </ul>
+        </nav>
+        <div id="derechos">
+            &copy; 2026 tecno valeria, todos los derechos reservados
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>
